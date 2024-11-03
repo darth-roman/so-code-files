@@ -87,5 +87,8 @@ As you can seem we are dealing with levels of content, so for a betterorganisati
 
 #### Our Projects List:
 * [Basic HTML](projects/basic-html/index.html)
+* [Forms Project](projects/forms-html) 🆕
+* [Div Demo](projects/div-demo/index.html) 🆕
+* [Personal Page Example](projects/personal-page) 🆕
 
 > This list will be enriched more as we move with the course
