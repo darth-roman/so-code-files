@@ -1,0 +1,16 @@
+[
+{"id":1,"title":"Trichophyton Mixture","desc":"aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas","status":false},
+{"id":2,"title":"Clindamycin hydrochloride","desc":"semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel","status":true},
+{"id":3,"title":"atorvastatin calcium","desc":"est congue elementum in hac habitasse platea dictumst morbi vestibulum","status":false},
+{"id":4,"title":"Benzocaine","desc":"magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien","status":true},
+{"id":5,"title":"Sodium Fluoride","desc":"viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero","status":false},
+{"id":6,"title":"Octinoxate and Oxybenzone","desc":"mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit","status":true},
+{"id":7,"title":"DOCUSATE SODIUM, SENNOSIDES","desc":"eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis","status":true},
+{"id":8,"title":"Codeine Phosphate, Pseudoephedrine Hydrochloride, Pyrilamine Maleate","desc":"ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper","status":false},
+{"id":9,"title":"Doxazosin Mesylate","desc":"aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse","status":true},
+{"id":10,"title":"tobramycin and dexamethasone","desc":"convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia","status":true},
+{"id":11,"title":"acetaminophen, dextromethorphan HBr, doxylamine succinate, phenylephrine HCl","desc":"ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit","status":true},
+{"id":12,"title":"Latanoprost","desc":"viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus","status":true},
+{"id":13,"title":"TITANIUM DIOXIDE, OCTINOXATE","desc":"donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit","status":true},
+{"id":14,"title":"GUAIFENESIN","desc":"diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu","status":false},
+{"id":15,"title":"Naproxen","desc":"ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec","status":true}]

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+$primary: #007F5F;
+$primary-lighter: #2B9348;
+$primary-darker: #1d5c2f;
+$secondary: #EEEF20;
+$secondary-lighter: #FFFF3F;
+$dark: #495057;
+$darker: #212529;
+$light: #f1faee;
+$contrast-1: #233d4d;
+$contrast-2: #fe7f2d;
+$contrast-3: #fcca46;
+$contrast-4: #a1c181;
+$contrast-5: #619b8a;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    
+    background-color: $dark;
+    color: $light;
+
+}
+
+/* Navigation */
+nav{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: $primary-lighter;
+    color: var(--light);
+}
+
+.logo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navigation ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+a {
+    padding: 0.5em;
+    text-decoration: none;
+    color: var(--light);
+}
+
+a:hover:not(.logo a, .back-link a, .btn) {
+    background-color: $primary-darker;
+    border-radius: 0.5em;
+}
+
+
+
+main {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+
+    padding: 1em;
+
+    .todo-form {
+        width: 100%;
+        .form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding: 1em;
+            background-color: $contrast-5;
+
+            border-radius: 0.5em;
+            
+            form {
+                display: flex;
+                flex-direction: row;
+                input[type="text"] {
+                    padding: 0.4em 0.2em;
+                }
+
+            }
+        }
+    }
+
+    .todos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .todo-container{
+            display: grid;
+            // flex-direction: column;
+            grid-template-columns: 100%;
+            gap: 1em;
+
+            .todo {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1em;
+                
+                padding: 1em;
+                border-radius: 0.5em;
+
+                background-color: $primary-lighter;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+        }
+        
+        
+        @media screen and (min-width: 800px){
+            .todo-container {
+                width: 80%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        
+    }
+
+    .actions {
+        display: flex;
+        gap: 1em;
+    }
+    .btn {
+        padding: 0.5em;
+        border-radius: 0.25em;
+        box-shadow: 0 1px 1px $darker;
+
+        
+        &.btn-edit{
+            background-color: $primary;
+            color: $light;
+            border: 1px solid $primary;
+
+        }
+
+        &.btn-delete {
+            background-color: $contrast-2;
+            color: $light;
+            border: 1px solid $contrast-2;
+        }
+        &.btn-submit {
+            background-color: $contrast-3;
+            color: $darker;
+            border: 1px solid $contrast-3;
+        }
+    }
+
+
+}
+

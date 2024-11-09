@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif; }
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #495057;
+  color: #f1faee; }
+
+/* Navigation */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2B9348;
+  color: var(--light); }
+
+.logo a {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#navigation ul {
+  display: flex;
+  list-style-type: none;
+  gap: 10px; }
+
+a {
+  padding: 0.5em;
+  text-decoration: none;
+  color: var(--light); }
+
+a:hover:not(.logo a, .back-link a, .btn) {
+  background-color: #1d5c2f;
+  border-radius: 0.5em; }
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  padding: 1em; }
+  main .todo-form {
+    width: 100%; }
+    main .todo-form .form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1em;
+      background-color: #619b8a;
+      border-radius: 0.5em; }
+      main .todo-form .form form {
+        display: flex;
+        flex-direction: row; }
+        main .todo-form .form form input[type="text"] {
+          padding: 0.4em 0.2em; }
+  main .todos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    main .todos .todo-container {
+      display: grid;
+      grid-template-columns: 100%;
+      gap: 1em; }
+      main .todos .todo-container .todo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        padding: 1em;
+        border-radius: 0.5em;
+        background-color: #2B9348; }
+        main .todos .todo-container .todo:hover {
+          cursor: pointer; }
+    @media screen and (min-width: 800px) {
+      main .todos .todo-container {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); } }
+  main .actions {
+    display: flex;
+    gap: 1em; }
+  main .btn {
+    padding: 0.5em;
+    border-radius: 0.25em;
+    box-shadow: 0 1px 1px #212529; }
+    main .btn.btn-edit {
+      background-color: #007F5F;
+      color: #f1faee;
+      border: 1px solid #007F5F; }
+    main .btn.btn-delete {
+      background-color: #fe7f2d;
+      color: #f1faee;
+      border: 1px solid #fe7f2d; }
+    main .btn.btn-submit {
+      background-color: #fcca46;
+      color: #212529;
+      border: 1px solid #fcca46; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+    
+    --light: #FDF0D5;
+    --dark: #4a4c4e;
+    --darker: #262829; 
+    --primary:  #d62d38;
+    --primary-darken: #780000;
+    --secondary: rgb(4, 110, 167);
+    --secondary-darken: #003049;
+    --secondary-lighten:  #669BBC;
+    
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--dark);
+    color: var(--light);
+
+}
+
+/* Navigation */
+nav{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+.logo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navigation ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+a {
+    padding: 0.5em;
+    text-decoration: none;
+    color: var(--light);
+}
+
+a:hover:not(.logo a, .back-link a, .btn) {
+    background-color: var(--secondary-darken);
+    border-radius: 0.5em;
+}
+
+
+/* Main */
+main{    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+main .hero {
+    height: 25em ;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 2em;
+
+    background-color: var(--secondary);
+}
+
+.hero h1 {
+    padding: 1em 0; 
+    color: var(--secondary-darken);
+}
+
+h1 span {
+    color: var(--light);
+}
+
+
+/* Main > Grid */
+.jobs-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.job {
+    padding: 1em;
+    margin: 0.5em 0;
+    border-radius: 0.5em;
+    box-shadow: 0 0 6px black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+
+    background-color: var(--light);
+    color: var(--darker);
+
+
+}
+
+.container {
+    background-color: var(--light);
+    color: var(--darker);
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.job > *{
+    margin: 0.5em 0;
+}
+
+.job .details {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.details .salary {
+    color: var(--secondary);
+}
+
+/* To refactor in class  */
+.job .btn, .who-can-use-us .btn {
+    padding: 0.5em;
+    border-radius: 0.25em;
+    background-color: var(--secondary-darken);
+    color: var(--light);
+    border: 1px solid var(--secondary-darken);
+
+    box-shadow: 0 1px 1px var(--darker);
+}
+
+.btn {
+    padding: 0.5em;
+    border-radius: 0.25em;
+    border: 1px solid var(--secondary-darken);
+    box-shadow: 0 1px 1px var(--darker);
+}
+.who-can-use-us {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin: 0 0 0.8em 0;
+}
+
+.who-can-use-us p {
+    margin: 1.2em 0;
+}
+
+.who-can-use-us > * {
+    padding: 1em;
+    margin: 1em;
+}
+
+
+.devs {
+    background-color: var(--secondary-lighten);
+
+}
+/* .devs * {
+    margin: 0.3em;
+} */
+.business {
+    background-color: var(--secondary-darken);
+    color: var(--light);
+}
+
+.devs, .business {
+    border-radius: 0.5em;
+}
+
+
+.business .btn-dark{
+    background-color: var(--secondary-lighten);
+    color: var(--darker);
+}
+
+.btn-primary {
+    background-color: var(--secondary-darken);
+    color: var(--light);
+}
+
+
+
+
+
+/* Job.html */
+
+.back-link {
+    width: 100%;
+    background-color: var(--light);
+    padding: 1em 0;
+
+}
+.back-link a {
+    color: var(--secondary-darken);
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+.job-details {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1em;
+
+    gap: 1em;
+
+}
+
+.job-details .location,
+.job-desc,
+.company-info{
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--light);
+    color: var(--darker);
+    padding: 0.5em;
+
+    box-shadow: 0 4px 7px var(--darker);
+
+    border-radius: 0.3em;
+}
+
+
+
+.job-details .location *,
+.job-desc *,
+.company-info *,
+.contacts > *{
+    margin: 0.3em 0;
+}
+
+.salary span {
+    color: var(--secondary-darken);
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--dark);
+}
+
+.contacts .contact {
+    margin: 0.7em 0;
+}
+
+.contact p {
+    padding: 0.7em;
+
+    color: var(--light);
+    background-color: var(--primary);
+}
+
+@media screen and (min-width: 1200px){
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+        width: 70%;
+        align-self: center;
+    }
+
+    .hero h1{
+        font-size: 4em;
+    }
+
+    .hero p{
+        font-size: 2em;
+    }
+
+    .job-details {
+        width: 70%;
+        align-self: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .location {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+
+    .job-desc {
+        grid-column: 1 / 3;
+        grid-row: 2;
+    }
+
+    .company-info {
+        grid-column:  3;
+        grid-row: 1 / 4;
+    }
+     .who-can-use-us {
+        flex-direction: row;
+        width: 80%;
+        align-self: center;
+    }
+
+
+}
+
+/* Form */
+
+@media screen and (min-width: 750px) and (max-width: 1200px){
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+        width: 80%;
+        align-self: center;
+    }
+
+    .hero h1{
+        font-size: 3em;
+    }
+
+    .hero p{
+        font-size: 1.3em;
+    }
+
+    .job-details {
+        width: 80%;
+        align-self: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .location {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+
+    .job-desc {
+        grid-column: 1 / 3;
+        grid-row: 2;
+    }
+
+    .company-info {
+        grid-column:  3;
+        grid-row: 1 / 4;
+    }
+
+    .who-can-use-us {
+        flex-direction: row;
+    }
+}
+

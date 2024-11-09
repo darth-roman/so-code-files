@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/">
+                <!-- <img src="img/logo_.png" alt="Logo" height="75"> -->
+                <h2>Todos</h2>
+            </a>
+        </div>
+        <div id="navigation">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/pages/all-todos.html">All Todos</a>
+                </li>
+                <li>
+                    <a href="#">Connect</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="todo-form">
+            <div class="form">
+                <h4>New Task</h4>
+                <form>
+                    <input type="text" id="newTodo" name="newTask">
+                    <!-- <button class="btn btn-submit" id="add-task">Add Task</button> -->
+                    <input type="submit" value="Add Task" class="btn btn-submit" id="add-task">
+                </form>
+            </div>
+        </div>
+
+        <div class="todos">
+            <div class="todo-container">
+                <div class="todo">
+                    <div class="title">
+                        <h4>Todo Title</h4>
+                    </div>
+                    <div class="desc">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Vitae, itaque voluptate! Natus ipsa architecto maxime
+                            nobis tempore porro officiis rem. Fuga facere 
+                            voluptatibus vero repudiandae ea, sapiente iure esse Dolores?
+                        </p>
+                    </div>
+                    <div class="actions">
+                        <div class="action">
+                            <button class="btn btn-edit">Edit</button>
+                        </div>
+                        <div class="action">
+
+                            <button class="btn btn-delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="todo">
+                    <div class="title">
+                        <h4>Todo Title</h4>
+                    </div>
+                    <div class="desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Vitae, itaque voluptate! Natus ipsa architecto maxime
+                        nobis tempore porro officiis rem. Fuga facere 
+                        voluptatibus vero repudiandae ea, sapiente iure esse Dolores?
+                    </div>
+                    <div class="actions">
+                        <div class="action">
+                            <button class="btn btn-edit">Edit</button>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

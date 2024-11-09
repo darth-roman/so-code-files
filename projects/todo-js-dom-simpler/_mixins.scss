@@ -1,0 +1,6 @@
+@import 'utils';
+
+@mixin border-styling($borderStyle: solid, $color: $darker) {
+    border-radius: 0.3em;
+    border: 3px $borderStyle $color;
+}

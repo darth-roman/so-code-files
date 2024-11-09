@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Todos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/">
+                <!-- <img src="img/logo_.png" alt="Logo" height="75"> -->
+                <h2>Todos</h2>
+            </a>
+        </div>
+        <div id="navigation">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="#">All Todos</a>
+                </li>
+                <li>
+                    <a href="#">Connect</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="todos" data-key="0">
+            <div class="todo-container">
+                <div class="todo">
+                    <div class="title">
+                        <h4>${todo.title}</h4>
+                    </div>
+                    <div class="desc">
+                        <p>
+                            ${todo.desc}
+                        </p>
+                    </div>
+                    <div class="actions">
+                        <div class="action">
+                            <button class="btn btn-edit">Edit</button>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../main.js"></script>
+</body>
+</html>
