@@ -5,9 +5,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Merriweather", serif;
     
     --light: #FDF0D5;
+    --lighter: #fddad5;
     --dark: #4a4c4e;
     --darker: #262829; 
     --primary:  #d62d38;
@@ -17,8 +17,11 @@
     --secondary-lighten:  #669BBC;
     
 }
-
+kbd {
+    font-size: 1rem;
+}
 body {
+    font-family: "Merriweather", serif;
     height: 100vh;
     width: 100vw;
 
@@ -60,10 +63,12 @@ a {
     color: var(--light);
 }
 
-a:hover:not(.logo a, .back-link a, .btn) {
+a:hover:not(.logo a, .back-link a, .btn, .social-link, .credits a) {
     background-color: var(--secondary-darken);
     border-radius: 0.5em;
 }
+
+
 
 
 /* Main */
@@ -110,7 +115,8 @@ h1 span {
 
 .grid-container {
     width: 100%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -296,8 +302,101 @@ h1 span {
     background-color: var(--primary);
 }
 
+/* Add Job form */
+
+#add-job-page main {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    padding: 1em;
+    margin: 4em 0 0 0 ;
+}
+.form-container{
+    box-shadow: 0 0 1em var(--darker);
+}
+#add-job-page .form-container form{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    padding: 1em;
+
+    background-color: var(--darker);
+    color: var(--light);
+
+}
+
+
+.job-section,
+.company-section{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1em;
+}
+
+.form-container .form-field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    padding: 0.1em;
+}
+
+select, input, textarea {
+    padding: 0.3em;
+    background-color: #fff;
+}
+select:focus,
+input:focus,
+textarea:focus{
+    outline: 2px solid var(--secondary-lighten);
+}
+
+
+footer {
+    width: 100%;
+    background-color: var(--light);
+    color: var(--darker);
+    margin: 3em 0 0 0;
+}
+
+footer a {
+    color: var(--darker);
+}
+
+footer .contacts > .social-links .social-link {
+    padding: 0.3em ;
+}
+.social-link:hover, .credits a:hover{
+    text-decoration: underline;
+}
+.contacts {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.credits {
+    padding: 1em;
+    text-align: center;
+    justify-self: center;
+    background-color: var(--lighter)
+}
+
+/* Medias */
+
 @media screen and (min-width: 1200px){
     .grid-container {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1em;
         width: 70%;
@@ -305,6 +404,7 @@ h1 span {
     }
 
     .hero h1{
+        color: #780000;
         font-size: 4em;
     }
 
@@ -339,17 +439,34 @@ h1 span {
         align-self: center;
     }
 
+    #add-job-page form {
+        width: 100%;
+    }
+    
+
 
 }
 
 /* Form */
 
+@media screen and (min-width: 1400px){
+    body {
+        background-color: var(--secondary-darken);
+    }
+}
+
 @media screen and (min-width: 750px) and (max-width: 1200px){
+    body{
+
+
+    }
     .grid-container {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1em;
         width: 80%;
         align-self: center;
+
     }
 
     .hero h1{

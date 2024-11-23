@@ -8,6 +8,8 @@
   * [`<div>` Element](#div-element) 🆕
   * [Parent-Child Relationship](#parent-child-relationship) 🆕
   * [`class` attriue](#class-attribute) 🆕
+* **[CSS](#css):**
+    * [HTML](#html):
 
 ### HTML intro and basics
 
@@ -262,6 +264,66 @@ Examples:
     <!-- More HTML Here -->
 </div>
 ```
+
+### CSS:
+`CSS` stands for `Cascading Style Sheets` and it is used to describe the presentation of a document written in `HTML` or `XML` (including `XML` dialects such as `SVG`). `CSS` describes how elements should be rendered on screen, on paper, in speech, or on other media.
+
+#### Basic Syntax:
+```css
+selector {
+    property: value;
+}
+```
+
+**`selector`:** The selecor here is what we use to select the `HTML` element to be styled, we can use many many and many ways to select an element in `CSS` 
+
+**`Selectors`**
+| Selector      | Description |
+| ----------- | ----------- |
+| `element`   | Select element by its name
+|  `.class-name`      |  Select element by class attribute `.` |
+|  `#id-name`      |  Select element by id attribute `#` |
+
+
+**Element Name Selector**
+```html
+<div>
+    <!-- HTML Code here -->
+</div>
+```
+```css
+/** Selected by element name (body) */
+div {
+    background-color: red;
+}
+```
+
+**Class Attribute Selector**
+```html
+<div class="container">
+    <!-- HTML Code here -->
+</div>
+```
+```css
+/** Selected by class attribute (.container) */
+.container {
+    background-color: red;
+}
+```
+**ID Attribute Selector**
+```html
+<div id="home">
+    <!-- HTML Code here -->
+</div>
+```
+```css
+#home {
+    background-color: red;
+}
+```
+> **💡 Hint:** \
+There are other methods of selecting, but these are the main ones (Discussed in the classroom and the slides)
+
 
 
 #### Our Projects List:

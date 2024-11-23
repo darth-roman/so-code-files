@@ -6,7 +6,7 @@
     <title>Add a Job</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body id="add-job-page">
     <nav>
         <div class="logo">
             <a href="/">
@@ -32,43 +32,59 @@
     <main>
         <div class="form-container">
             <form>
-                <div class="form-field">
-                    <label for="">Field</label>
-                    <input type="text" name="">
-                </div>
-                <div class="form-field">
-                    <label for="">Field</label>
-                    <input type="text" name="">
-                </div>
-                <div class="form-field">
-                    <label for="">Field</label>
-                    <input type="text" name="">
-                </div>
-                <div class="form-field">
-                    <label for="">Field</label>
-                    <input type="text" name="">
-                </div>
-                <div class="form-field">
-                    <label for="">Field</label>
-                    <input type="text" name="">
-                </div>
-                <div class="form-field">
-                    <label for="">Field</label>
-                    <input type="text" name="">
-                </div>
-                <div class="form-field">
-                    <label for="">Field</label>
-                    <input type="text" name="">
-                </div>
-                <div class="form-field">
-                    <label for="">Field</label>
-                    <input type="text" name="">
-                </div>
-                <div class="form-field">
-                    <label for="">Field</label>
-                    <input type="text" name="">
+                <div class="job-section">
+                    <h4>Job Information</h4>
+                    <div class="form-field">
+                        <label for="">Job Type</label>
+                        <select name="" id="">
+                            <option value="">Full Time</option>
+                            <option value="">Part Time</option>
+                            <option value="">Intern</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="">Job Listing Name</label>
+                        <input type="text" name="">
+                    </div>
+                    <div class="form-field">
+                        <label for="">Description</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <label for="">Salary</label>
+                        <select name="" id="">
+                            <option value="">Under 50K</option>
+                            <option value="">Under 75K</option>
+                            <option value="">Over 80K</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="">Location</label>
+                        <input type="text" name="">
+                    </div>
                 </div>
 
+                <div class="divider"></div>
+                
+                <div class="company-section">
+                    <h4>Company Information</h4>
+                    <div class="form-field">
+                        <label for="">Company Name</label>
+                        <input type="text" name="">
+                    </div>
+                    <div class="form-field">
+                        <label for="">Company Description</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <label for="">Contact Email</label>
+                        <input type="text" name="">
+                    </div>
+                    <div class="form-field">
+                        <label for="">Contact Phone</label>
+                        <input type="text" name="">
+                    </div>
+                </div>
                 <input type="submit" class="btn btn-primary">
             </form>
         </div>
