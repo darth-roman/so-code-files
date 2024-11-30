@@ -1,0 +1,85 @@
+/* #drag-drop-container{
+    height: 50vh;
+    width: 50vw;
+
+    background-color: gray;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.draggabale{
+    background-color: red;
+    color: white;
+    height: 100px;
+    width: 100px;
+    margin: 1em;
+}
+
+#item-2{
+    background-color: blue;
+} */
+
+body {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+nav h1 {
+    margin: 0;
+}
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin: 10px ;
+}
+
+#burger {
+    display: none;
+}
+
+#burger div {
+    height: 7px;
+    width: 40px;
+    background-color: black;
+    margin: 2px 0;
+    
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+@media screen and (max-width: 550px ) {
+    #burger {
+        display: block;
+    }
+
+    nav ul {
+       flex-direction: column;
+       display: none;
+    }
+}

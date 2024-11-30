@@ -31,6 +31,8 @@ body {
     background-color: var(--dark);
     color: var(--light);
 
+    overflow: scroll;
+
 }
 
 /* Navigation */
