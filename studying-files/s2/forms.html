@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Style element
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        form{
+            color: #126112;
+        }
+    </style> -->
+</head>
+<body>
+    <h1>Contact Form</h1>
+
+    <!-- Form element -->
+    <form method="post" action="/form">
+        <div class="form-field">
+            <label for="email">Email Address</label><br>
+            <input type="email" name="userEmail" id="email" placeholder="example@xyz.com"> 
+        </div>
+
+        <div class="form-field">
+            <label for="">Password</label><br>
+            <input type="password" id="password" name="userPass" placeholder="Your password">
+        </div>
+
+        <div class="form-field">
+            <label for="textarea">Contact Me</label><br>
+            <textarea name="message" id="textarea" rows="10" cols="15"></textarea>
+        </div>
+
+        <button type="submit" style="background-color: #126112;">Submit me</button>
+        <button type="reset" style="background-color: #6d1d1a;">Resert Form</button>
+
+    </form>
+</body>
+</html>
